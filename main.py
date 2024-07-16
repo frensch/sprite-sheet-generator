@@ -12,7 +12,7 @@ size = height*rows, width*columns, colordef
 m = np.zeros(size, dtype=np.uint8)
 icol = 0
 irow = 0
-for item in range(0,60,1):
+for item in range(0,columns*rows,1):
 	file = path + '/splah_bola_' + ("%05d.png" % (item))
 	img = cv2.imread(file, cv2.IMREAD_UNCHANGED)
 	print (item)
