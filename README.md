@@ -1,8 +1,12 @@
-# How to setup
+# Sprite Sheet Generator
+Generation of sprite sheets from a sequence of image files.
+It creates a single file merged with specified columns and rows, from right to bottom direction
+
+## How to setup
 
 ``pip install -r requirements.txt``
 
-# Usage
+## Usage
 ```
 usage: python main.py [-h] -i FILES -e EXTENSION -d DIGITS -c COLUMNS -r ROWS [-cc COLORCHANNELS] output_filename
 
@@ -33,7 +37,9 @@ options:
                         The number of color channels the input files have. Usually 4 with alpha channels in PNG
 ```
 
-# Example
+## Example
 
-```python sprite_gen.py -i /Users/thiago.frensch/Downloads/PNG2/splah_bola_ -e png -d 5 -c 5 -r 12 sprite1.png```
+For creating a file named sprite1.png from a 5x12 sprite sheet from PNGs files like /Users/PNGs/splash_00000.png
+
+```python sprite_gen.py -i /Users/PNGs/splash_ -e png -d 5 -c 5 -r 12 sprite1.png```
                         
