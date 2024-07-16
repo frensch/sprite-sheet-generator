@@ -31,4 +31,9 @@ options:
 
   -cc COLORCHANNELS, --colorchannels COLORCHANNELS
                         The number of color channels the input files have. Usually 4 with alpha channels in PNG
+```
+
+# Example
+
+```python sprite_gen.py -i /Users/thiago.frensch/Downloads/PNG2/splah_bola_ -e png -d 5 -c 5 -r 12 sprite1.png```
                         
